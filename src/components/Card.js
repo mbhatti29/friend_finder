@@ -4,24 +4,24 @@ const Card = ({ name, email, id }) => {
   // const { name, email, id } = props;
   // just destructure inside the parameter
   return (
-    //return only one element
-    <div className='tc bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5'>
+
+    <div className='tc bg-light-blue dib br3 pa2 ma2 grow bw2 shadow-5'>
       <img alt='Our pretty Pic' src={`https://robohash.org/${id}?50x50`} />
       <div>
-        <h2>{name}</h2> 
-        <p>{email}</p>
+        <h2>{ name }</h2> 
+        <p>{ email }</p>
       </div>
     </div>
   )
 }
+
 //! js expressions within html are wrapped inside curly brackets
 
 
-
 // const Card = (props) => {
-//   // const { name, email, id } = props;
+//   const { name, email, id } = props; //or use this option
 //   return (
-//     //return only one element
+//     return only one element
 //     <div className='tc bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5'>
 //       <img alt='Our pretty Pic' src={`https://robohash.org/${id}?50x50`} />
 //       <div>
